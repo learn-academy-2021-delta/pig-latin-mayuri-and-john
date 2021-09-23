@@ -2,6 +2,10 @@ import React, { Component } from 'react'
 import './App.css'
 import butcherPig from './assets/butcherPig.jpeg'
 
+// if we encounter a consonant, loop through until we find a vowel.
+// if we encounter a vowel, take leters before the vowel and add them to the end of the word and add "ay" to the end.
+
+
 class App extends Component{
   constructor(props){
     super(props)
