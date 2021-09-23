@@ -2,8 +2,6 @@ import React, { Component } from 'react'
 import './App.css'
 import butcherPig from './assets/butcherPig.jpeg'
 
-// if we encounter a consonant, loop through until we find a vowel.
-// if we encounter a vowel, take leters before the vowel and add them to the end of the word and add "ay" to the end.
 
 
 class App extends Component{
@@ -38,12 +36,19 @@ class App extends Component{
       console.log("vowelsArray:", vowelsArray)
 
       // your code here!
+      let pigLatinWord = pigLatinWord
+      if(vowelsArray.length < 1){
+         pigLatinWord = currentWord +"ay"
+      }
+      
+      
+  
 
       // Remember: console.log is your friend :)
 
 
       // ACTION ITEM: change the value of currentWord to the name of whatever variable you made containing your Pig Latin'd word
-      return currentWord
+      return pigLatinWord
     })
 
 
