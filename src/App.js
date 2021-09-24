@@ -49,16 +49,6 @@ class App extends Component{
           pigLatinWord = pigLatinWord + moveLetters + "ay"
         }
 
-        // } else if (vowelsArray.length >= 1) {
-        //   let moveLetters = ""
-        //     while(vowelsArray.slice(0,1)) {
-        //       moveLetters += vowelsArray.slice(0,1)
-        //       vowelsArray = moveLetters.slice(1,vowelsArray.length)
-        //     }
-        //     vowelsArray = vowelsArray + moveLetters + "ay"
-        // } else {
-        //   pigLatinWord = pigLatinWord + "ay"
-        // }
 
       // Remember: console.log is your friend :)
 
