@@ -35,14 +35,14 @@ class App extends Component{
       })
       console.log("vowelsArray:", vowelsArray)
 
-      // your code here!
+      // your code here
         let pigLatinWord = currentWord
         
-        if(pigLatinWord.slice(0,1)){
+        if(pigLatinWord.slice(0,1).match(/[aeiouAEIOU]/)){
           pigLatinWord = pigLatinWord + "way"
         } else {
           let moveLetters = ""
-          while (pigLatinWord.slice(0,1)) {
+          while (pigLatinWord.slice(0,1).match(/[^aeiouAEIOU]/)) {
             moveLetters += pigLatinWord.slice(0,1)
             pigLatinWord = pigLatinWord.slice(1,pigLatinWord.length)
           }
